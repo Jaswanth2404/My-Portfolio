@@ -15,21 +15,29 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       alert("Your message has been sent successfully!");
-
       form.reset();
   });
 });
 
-// Side Menu Handling
+// Side Menu Handling (For Both PC and Mobile)
 const sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
-  sidemenu.style.right = "0";
+  sidemenu.style.transition = "0.3s ease";  // Smooth transition
+  sidemenu.style.right = "0";  // Open side menu on mobile or desktop
 }
 
 function closemenu() {
-  sidemenu.style.right = "-200px";
+  sidemenu.style.transition = "0.3s ease";  // Smooth transition
+  sidemenu.style.right = "-200px";  // Close side menu on mobile or desktop
 }
+
+// Close the menu when clicked outside of it (for mobile responsiveness)
+document.addEventListener("click", (event) => {
+  if (!event.target.closest("#sidemenu") && !event.target.closest(".fas.fa-bars")) {
+    closemenu();  // Automatically close menu if clicked outside
+  }
+});
 
 // Tab Switching Functionality
 const tablinks = document.getElementsByClassName("tab-links");
@@ -87,6 +95,8 @@ app.post('/contact', (req, res) => {
 app.listen(3000, () => {
   console.log('Server running on port 3000');
 });
+
+// React Native WebView Code (Mobile)
 import React from 'react';
 import { WebView } from 'react-native-webview';
 
@@ -95,4 +105,3 @@ const PortfolioApp = () => {
 };
 
 export default PortfolioApp;
-
