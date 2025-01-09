@@ -527,23 +527,83 @@ footer i:hover {
       opacity: 1;
   }
 }
+/* General adjustments for small screens */
 @media (max-width: 768px) {
-  /* Styles for tablets and smaller devices */
-  body {
-    font-size: 14px;
-  }
-  .container {
-    padding: 10px;
-  }
+    /* Adjust overall padding and font size for readability */
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 5%;
+    }
+
+    .row {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center-align items */
+    }
+
+    .col-md-6, .col-sm-12 {
+        flex-basis: 100%; /* Take full width on mobile */
+        margin: 10px 0; /* Add spacing between stacked items */
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 20px;
+        background-color: #000; /* Optional: Add a background for better contrast */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .header-text h1 {
+        font-size: 24px; /* Adjust header font size */
+    }
+
+    .header-text p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .about img {
+        max-width: 100%;
+        height: auto; /* Ensure images resize correctly */
+    }
+
+    .project-card, .achievement {
+        width: 100%; /* Make cards full-width */
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%; /* Stack contact columns */
+    }
+
+    .social-icons a {
+        font-size: 24px; /* Reduce icon size */
+    }
+
+    .copyright {
+        font-size: 12px;
+        padding: 10px;
+    }
 }
 
+/* For ultra-small screens (mobile phones) */
 @media (max-width: 480px) {
-  /* Styles for mobile phones */
-  .navbar {
-    flex-direction: column;
-  }
-  .content {
-    font-size: 12px;
-  }
+    .header-text h1 {
+        font-size: 20px; /* Further reduce header size */
+    }
+
+    .sub-title {
+        font-size: 28px; /* Smaller subtitle */
+    }
+
+    .btn {
+        padding: 10px 20px; /* Adjust button size */
+    }
 }
 
