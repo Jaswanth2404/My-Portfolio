@@ -87,3 +87,12 @@ app.post('/contact', (req, res) => {
 app.listen(3000, () => {
   console.log('Server running on port 3000');
 });
+import React from 'react';
+import { WebView } from 'react-native-webview';
+
+const PortfolioApp = () => {
+  return <WebView source={{ uri: 'https://your-portfolio-link.com' }} />;
+};
+
+export default PortfolioApp;
+
