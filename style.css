@@ -527,3 +527,23 @@ footer i:hover {
       opacity: 1;
   }
 }
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller devices */
+  body {
+    font-size: 14px;
+  }
+  .container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for mobile phones */
+  .navbar {
+    flex-direction: column;
+  }
+  .content {
+    font-size: 12px;
+  }
+}
+
