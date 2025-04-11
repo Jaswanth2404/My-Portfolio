@@ -88,6 +88,10 @@ app.post('/contact', (req, res) => {
       } else {
           console.log('Email sent: ' + info.response);
           res.status(200).send('Message sent successfully');
+function toggleMenu() {
+  const nav = document.getElementById("navLinks");
+  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
       }
   });
 });
