@@ -1,223 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website of Jaswanth showcasing projects, skills, achievements, and contact information.">
-    <meta name="keywords" content="portfolio, web designer, developer, machine learning, AI, dancer, athlete">
-    <title>Portfolio Website</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio website of Jaswanth showcasing projects, skills, achievements, and contact information." />
+    <meta name="keywords" content="portfolio, web designer, developer, machine learning, AI, dancer, athlete" />
+    <title>Jaswanth | Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/cc3843841d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="header">
+    <header id="header">
         <div class="container">
             <nav>
-                <img src="logo.png" class="logo" alt="Logo of Jaswanth's portfolio">
+                <img src="logo.png" class="logo" alt="Logo of Jaswanth's portfolio" />
                 <ul id="sidemenu">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#achievements" >Achievements</a></li>
-                    <li><a href="#resume" >Resume</a></li>
-                    <li><a href="#contact">Contact</a></li> 
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
                 <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Designer</p>
-                <h1>Hey,<span>I'm Jaswanth</span></h1>
+                <h1>Hey, <br><span>I'm Jaswanth</span></h1>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div id="about">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="profile 2.jpg" alt="Profile picture of Jaswanth">
+                    <img src="profile 2.jpg" alt="Profile picture of Jaswanth" />
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>Hi, I'm Jaswanth, a passionate dancer and tech enthusiast. As a member of Teammuteup at Veltech University, I’ve mastered freestyle, lyrical, and mass dance under the mentorship of Vinothmaster, who also inspires me with life lessons. Currently pursuing my B.Tech in Computer Science and Engineering with a focus on AI and Machine Learning at Veltech University.</p><br>
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Hi, I'm Jaswanth, a passionate dancer and tech enthusiast. As a member of Teammuteup at Veltech University, I’ve mastered freestyle, lyrical, and mass dance under the mentorship of Vinothmaster, who also inspires me with life lessons. Currently pursuing my B.Tech in Computer Science and Engineering with a focus on AI and Machine Learning at Veltech University.</p>
                     <p class="sentence-gap">In addition to dance, I have a strong interest in technology, with skills in Web Development, DSA, DBMS, and Programming. I thrive on blending creativity and innovation, living by the motto "never say never."</p>
-                    <br><p class="sentence-gap">Thank you for visiting my portfolio, and I look forward to connecting with you!</p>
-                   <div id="skills">
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="Skills">
-                        <ul>
-                            <li><span>Web Design</span><br>Designing and developing websites</li>
-                            <li><span>Python Development</span><br>Developing many projects related to Python</li>
-                            <li><span>Professional Dancer</span><br>Member of Team Muteup(Dance Club) Veltech University</li>
-                            <li><span>Athlete</span><br>"Strength, endurance, and precision honed through competitive shot put training and performance."</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2024 - Current Sem</span><br>Exchange Student as an intern at Tamkang University, Taiwan</li>
-                            <li><span>2024 - Current</span><br>Web Development intern at CodSoft</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2021 - Current</span><br>I am currently pursuing my Bachelor's degree in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning at Vel Tech University</li>
-                            <li><span>2019 - 2021</span><br>Narayana Junior College</li>
-                        </ul>
-                    </div>
+                    <p class="sentence-gap">Thank you for visiting my portfolio, and I look forward to connecting with you!</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="projects">
+    <section id="skills">
         <div class="container">
-            <div class="sub-title">Projects</div>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Web Design</span><br>Designing and developing websites</li>
+                    <li><span>Python Development</span><br>Developing many projects related to Python</li>
+                    <li><span>Professional Dancer</span><br>Member of Team Muteup (Dance Club), Veltech University</li>
+                    <li><span>Athlete</span><br>Strength, endurance, and precision honed through competitive shot put training and performance</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2024 - Present</span><br>Exchange Student (Intern) at Tamkang University, Taiwan</li>
+                    <li><span>2024 - Present</span><br>Web Development Intern at CodSoft</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2021 - Present</span><br>B.Tech in Computer Science and Engineering (AI & ML), Vel Tech University</li>
+                    <li><span>2019 - 2021</span><br>Narayana Junior College</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="sub-title">Projects</h2>
             <div class="projects-list">
-                <div class="projects">
-                    <img src="Project 1.jpg" alt="Ultrasonic DIY Humidifier project image">
+                <div class="project-card">
+                    <img src="Project 1.jpg" alt="Ultrasonic DIY Humidifier" />
                     <div class="layer">
-                        <h3 class="sub-title">Ultrasonic Diy Humidifier</h3>
-                        <p>A humidifier adds moisture to the air, relieving issues like dry skin and respiratory problems while also protecting household items from dryness.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>Ultrasonic DIY Humidifier</h3>
+                        <p>Relieves dry skin and respiratory problems, protecting household items from dryness.</p>
+                        <a href="javascript:void(0)"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
-                <div class="projects">
-                    <img src="Project 2.png" alt="TechTutor project image">
+                <div class="project-card">
+                    <img src="Project 2.png" alt="TechTutor" />
                     <div class="layer">
-                        <h3 class="sub-title">TechTutor</h3>
-                        <p>A Tech Tutor helps individuals improve their technical skills by teaching software, troubleshooting, and offering guidance on digital literacy.</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>TechTutor</h3>
+                        <p>A platform to teach software, troubleshoot, and enhance digital literacy.</p>
+                        <a href="javascript:void(0)"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
-                <div class="projects">
-                    <img src="Project 3.png" alt="Follow My Plate project image">
+                <div class="project-card">
+                    <img src="Project 3.png" alt="Follow My Plate" />
                     <div class="layer">
-                        <h3 class="sub-title">Follow My Plate</h3>
-                        <p>"Follow My Plate was a web project focused on personalized meal planning and healthy eating, which I developed to help users track their meals and make informed nutrition choices."</p>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>Follow My Plate</h3>
+                        <p>Meal planning and healthy eating web app to track nutrition choices.</p>
+                        <a href="javascript:void(0)"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
-                    <div class="projects">
-                        <img src="project 4.jpg" alt="Breast Cancer Detection project image">
-                        <div class="layer">
-                            <h3 class="sub-title">Breast Cancer Detection</h3>
-                            <p>"Performed a comparative analysis of large language models and machine learning models on the Wisconsin Breast Cancer dataset, with Random Forest delivering the highest accuracy in breast cancer detection."</p>
-                            <a href="#"><i class="fa-solid fa-link"></i></a>
-                        </div>
+                <div class="project-card">
+                    <img src="project 4.jpg" alt="Breast Cancer Detection" />
+                    <div class="layer">
+                        <h3>Breast Cancer Detection</h3>
+                        <p>Comparative analysis using BERT and ML models; Random Forest achieved highest accuracy.</p>
+                        <a href="javascript:void(0)"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="achievements">
+    <section id="achievements">
         <div class="container">
-            <h1 class="sub-title">Achievements</h1>
+            <h2 class="sub-title">Achievements</h2>
             <div class="achievement-list">
                 <div class="achievement">
                     <i class="fa-solid fa-trophy"></i>
-                    <h3>District-Level Shot Put Competitor</h3>
-                    <p>Secured 2nd place and 3rd place in district-level shot put competitions, showcasing exceptional strength, technique, and dedication to athletics.</p>
+                    <h3>Shot Put Competitor</h3>
+                    <p>Secured 2nd and 3rd in district-level shot put competitions.</p>
                 </div>
                 <div class="achievement">
                     <i class="fa-solid fa-medal"></i>
-                    <h3>Certificate Of Appreciation</h3>
-                    <p>For completing the Cloud Foundation and Gen AI:Arcade of Google Cloud Study Jam COHORT2.</p>
+                    <h3>Google Cloud Study Jam</h3>
+                    <p>Completed Cloud Foundation & Gen AI: Arcade (Cohort 2).</p>
                 </div>
                 <div class="achievement">
                     <i class="fa-solid fa-award"></i>
                     <h3>IIT Rank Holder</h3>
-                    <p>Secured 3rd place in school for IIT, demonstrating strong analytical and problem-solving skills.</p>
+                    <p>3rd rank in school for IIT entrance prep.</p>
                 </div>
                 <div class="achievement">
                     <i class="fa-solid fa-network-wired"></i>
-                    <h3>Cisco Certification</h3>
-                    <p>Completed multiple modules in Cisco, gaining hands-on knowledge in networking and IT infrastructure.</p>
+                    <h3>Cisco Certified</h3>
+                    <p>Completed multiple modules in Cisco Networking.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="resume">
-        <h4 class="sub-title">Resume</h4>
-        <div class="resume-download">
-            <a href="Jaswanth Resume.pdf" download="Jaswanth Resume" class="btn">Download Resume</a>
+    <section id="resume">
+        <div class="container">
+            <h2 class="sub-title">Resume</h2>
+            <div class="resume-download">
+                <a href="Jaswanth Resume.pdf" download="Jaswanth Resume" class="btn">Download Resume</a>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div id="contact">
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
+                    <h2 class="sub-title">Contact Me</h2>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/jaswanth" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/jaswanth" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/jaswanth" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="mailto:jaswanthchowdary2404@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/jaswanth" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/jaswanth" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/jaswanth" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:jaswanthchowdary2404@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
-                    <div class="photo-wrapper">
-                        <img src="photo 3.jpg" alt="Jaswanth's photo" class="round-photo">
-                    </div>
+                    <img src="photo 3.jpg" alt="Jaswanth's photo" class="round-photo" />
                 </div>
                 <div class="contact-right">
-                    <form action="/contact" method="POST">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
+                    <form action="#" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
                         <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                 </div>
             </div>
+            <div class="copyright">
+                <p>&copy; 2024 Jaswanth. All rights reserved.</p>
+            </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2024 Jaswanth. All rights reserved.</p>
-        </div>
-    </div>
+    </section>
 
+    <!-- JavaScript Section -->
     <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-        
+        const tablinks = document.getElementsByClassName("tab-links");
+        const tabcontents = document.getElementsByClassName("tab-contents");
+
         function opentab(tabname) {
-            for (tablink of tablinks) {
+            for (let tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for (tabcontent of tabcontents) {
+            for (let tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-    </script>
 
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
+        const sidemenu = document.getElementById("sidemenu");
+
         function openmenu() {
             sidemenu.style.right = "0";
         }
+
         function closemenu() {
             sidemenu.style.right = "-200px";
         }
-    </script>
-    
-    <script>
+
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert("Form submitted successfully!");
+            alert("Thanks for reaching out! I'll get back to you soon.");
+            this.reset();
         });
     </script>
-
 </body>
 </html>
