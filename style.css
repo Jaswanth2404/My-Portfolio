@@ -72,6 +72,26 @@ nav {
   }
 }
 
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    width: 100%;
+    text-align: center;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
 
 
   nav li {
