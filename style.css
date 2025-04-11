@@ -36,25 +36,43 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+/* For screens smaller than 768px */
 @media screen and (max-width: 768px) {
-  nav ul {
-    display: flex;
+  nav {
     flex-direction: column;
-    background-color: black;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
+    background-color: #000; /* optional for visibility */
+    text-align: center;
+    padding: 10px 0;
   }
-  
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  text-align: center;
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-text {
+    font-size: 1.4rem;
+    padding: 0 15px;
+  }
+
+  .hero-image {
+    max-width: 90%;
+    height: auto;
+  }
 }
+
+
 
   nav li {
     padding: 10px;
