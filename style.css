@@ -8,13 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  margin: 0;
-  padding: 0;
-}
 
-main, .hero-section, section {
-  margin-top: 80px; /* Adjust if your header is taller or smaller */
 }
 
 body {
@@ -32,19 +26,7 @@ body {
   background-size: auto;
   background-position: right;
   
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: black;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 15px;
-}
+
   @media (max-width: 768px) {
   .logo img {
     height: 30px;
@@ -70,64 +52,6 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-/* For screens smaller than 768px */
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    background-color: #000; /* optional for visibility */
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  nav ul {
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-
-  nav li {
-    margin: 10px 0;
-  }
-
-  .hero-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .hero-text {
-    font-size: 1.4rem;
-    padding: 0 15px;
-  }
-
-  .hero-image {
-    max-width: 90%;
-    height: auto;
-  }
-}
-
-.hamburger {
-  display: none;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #111;
-    width: 100%;
-    text-align: center;
-  }
-  .hamburger {
-    display: block;
-  }
-}
-section:first-of-type {
-  margin-top: 80px; /* Adjust according to your header height */
 }
 
 
