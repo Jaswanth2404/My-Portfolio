@@ -23,7 +23,19 @@ body {
   background-image: url(photo.png);
   background-size: auto;
   background-position: right;
-  background-repeat: no-repeat;
+  
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: black;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
 }
 
 .container {
