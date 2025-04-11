@@ -37,7 +37,12 @@ header {
   justify-content: space-between;
   padding: 0 15px;
 }
-
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px;
+    width: auto;
+  }
+}
 .container {
   padding: 10px 10%;
 }
@@ -103,7 +108,9 @@ nav {
     display: block;
   }
 }
-
+section:first-of-type {
+  margin-top: 80px; /* Adjust according to your header height */
+}
 
 
   nav li {
