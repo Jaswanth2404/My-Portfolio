@@ -8,6 +8,14 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main, .hero-section, section {
+  margin-top: 80px; /* Adjust if your header is taller or smaller */
+}
 
 body {
   background: #000000;
