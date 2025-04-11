@@ -25,23 +25,7 @@ body {
   background-image: url(photo.png);
   background-size: auto;
   background-position: right;
-  
 
-  @media (max-width: 768px) {
-  .logo img {
-    height: 30px;
-  }
-
-  header {
-    height: 50px;
-    padding: 0 15px;
-  }
-  }
-@media (max-width: 768px) {
-  .logo img {
-    height: 40px;
-    width: auto;
-  }
 }
 .container {
   padding: 10px 10%;
