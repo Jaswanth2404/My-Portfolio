@@ -9,8 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-}
-
 body {
   background: #000000;
   color: rgb(255, 255, 255);
@@ -25,8 +23,9 @@ body {
   background-image: url(photo.png);
   background-size: auto;
   background-position: right;
-
+  background-repeat: no-repeat;
 }
+
 .container {
   padding: 10px 10%;
 }
@@ -37,19 +36,6 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-
-  nav li {
-    padding: 10px;
-    text-align: center;
-  }
-
-  .hero-text {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-}
-
 
 .logo {
   width: 200px;
@@ -479,6 +465,7 @@ nav .fas {
   .round-photo {
     width: 150px;
     height: 150px;
+    image-orientation:100px ;
   }
 
   form input,
