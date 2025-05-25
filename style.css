@@ -11,10 +11,10 @@ html {
 
 body {
   background: #000000;
-  color: rgb (255, 255, 255);
+  color: rgb(255, 255, 255);
   background-image: url(background 1.jpg);
   background-repeat: no-repeat;
-  background-size: 1400 px 640 px;
+  background-size: 1400px 640px;
 }
 
 #header {
